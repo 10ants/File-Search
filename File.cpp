@@ -35,10 +35,12 @@ int main()
         if (editedString.is_open()) {//if the file is open
             string temp;
             
-            while (getline(editedString, temp)) {
+            while (getline(editedString, temp)) 
+            {
                 stringstream stream(temp);
                 
-                while (stream.good()) {
+                while (stream.good()) 
+                {
                     string newString;
                     getline(stream, newString, ' ');
                     
